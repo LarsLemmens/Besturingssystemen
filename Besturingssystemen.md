@@ -98,4 +98,41 @@ Bytes per cluster * Bytes per FAT
 512 * 72 = 36864
 ```
 
+#### Size of root directory in bytes?
+- (last LBA - first LBA + 1) * 512
+
+```
+(20446-2048 + 1) * 512 = 9420288
+```
+
+#### Size of root directory in bytes
+- Aantal bytes (32 bytes) * 512
+
+```
+32 * 512 = 16384
+```
+
+#### Address of first FAT
+- "The first FAT directly follows the reserved region."
+```
+er zijn 8 sectoren reserved
+die zijn elk 0x0200 lang
+en dan uw startadres is 0x0100000
+8 x 0x0200 is 0x1000
+0x0100000 + 0x1000 = 0x101000
+```
+
+#### Address of root directory
+First FAT adres + (aantal FATs * BytesPerFAT)
+
+```
+101000 + (2 * 36864) HEX = 113000
+```
+
+#### Address of data region
+rootDirectoryAddress + rootDirectorySize;
+
+```
+113000 + 16384 = 117000
+```
 

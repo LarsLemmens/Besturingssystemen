@@ -139,3 +139,9 @@ rootDirectoryAddress + rootDirectorySize;
 113000 + 16384 = 117000
 ```
 
+#### Total Size of FAT16 Volume in bytes ( extra exercise 1 )
+small number of sectors * sector size 
+
+```
+28672 * 512
+```

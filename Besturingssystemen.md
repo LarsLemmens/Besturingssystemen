@@ -12,7 +12,7 @@ Raw data GPT
 ```
 
 #### How large is a single partition entry?
-- Kijken naar Size of Single Partition Entry (length = 4 dus 2 HEX)
+- Kijken naar Size of Single Partition Entry (length l_= 4 dus 2 HEX)
 
 ```
 - Size of Single Partition Entry = 80000000
@@ -58,7 +58,7 @@ Raw data GPT
 #### Number of blocks available for partitions
 
 ```
-Last useable LBA - First Usable LBA
+(Last useable LBA - First Usable LBA) - 1
 ```
 
 #### Space in bytes usable for partitions?

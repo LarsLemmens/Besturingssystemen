@@ -113,6 +113,7 @@ Bytes per cluster * Bytes per FAT
 ```
 
 #### Address of first FAT
+### Credits to Siebe aka Chepte 
 - "The first FAT directly follows the reserved region."
 ```
 er zijn 8 sectoren reserved

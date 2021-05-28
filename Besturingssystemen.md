@@ -124,7 +124,9 @@ en dan uw startadres is 0x0100000
 ```
 
 #### Address of root directory
-First FAT adres + (aantal FATs * BytesPerFAT)
+First FAT adres + (aantal FATs * BytesPerFAT) => niet zeker van deze
+### Chepte's fix
+first fat address + (sectors per fat) * 512
 
 ```
 101000 + (2 * 36864) HEX = 113000

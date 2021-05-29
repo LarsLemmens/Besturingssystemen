@@ -145,3 +145,12 @@ small number of sectors * sector size
 ```
 28672 * 512
 ```
+
+### Credits to chepte voor images
+
+![afbeelding](https://user-images.githubusercontent.com/71447000/120071478-edf45080-c08f-11eb-9095-cb61bf6f396b.png)
+
+
+![afbeelding](https://user-images.githubusercontent.com/71447000/120071562-4b889d00-c090-11eb-9251-b099c59d166f.png)
+
+

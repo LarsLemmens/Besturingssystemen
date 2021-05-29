@@ -56,9 +56,9 @@ Raw data GPT
 ```
 
 #### Number of blocks available for partitions
-
+### Credits to Bokoloco
 ```
-(Last useable LBA - First Usable LBA) - 1
+(Last useable LBA - First Usable LBA) + 1
 ```
 
 #### Space in bytes usable for partitions?
@@ -105,7 +105,7 @@ Bytes per cluster * Bytes per FAT
 (20446-2048 + 1) * 512 = 9420288
 ```
 
-#### Size of root directory in bytes
+#### Size of root directory in bytes ( no clue of dit kan & klopt )
 - Aantal bytes (32 bytes) * 512
 
 ```

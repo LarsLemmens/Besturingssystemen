@@ -160,6 +160,8 @@ First FAT address + First cluster * 2 &rarr; AFHANKELIJK AANTAL BITS
 #### File contents (file4.dat)
 Start of region data + (laatste van cluster chain - 2) + cluster size
 
+##### Note: Start of Region Data = Data Region Address in Boot Sector
+
 ```
 108000 (HEX) + (3439 - 2) (DEC) * 2048
 ```
@@ -170,6 +172,12 @@ small number of sectors * sector size
 
 ```
 28672 * 512
+```
+
+#### OEFENING 2 FILE RAW BYTES VINDEN
+
+```
+(first cluster -2 ) * Size of Cluster in Bytes:
 ```
 
 ### Credits to chepte voor images

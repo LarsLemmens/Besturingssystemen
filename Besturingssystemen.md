@@ -177,7 +177,7 @@ small number of sectors * sector size
 #### OEFENING 2 FILE RAW BYTES VINDEN
 
 ```
-(first cluster -2 ) * Size of Cluster in Bytes:
+Data Region Address + (first cluster -2 ) * Size of Cluster in Bytes:
 ```
 
 ### Credits to chepte voor images

@@ -12,7 +12,7 @@ Raw data GPT
 ```
 
 #### How large is a single partition entry?
-- Kijken naar Size of Single Partition Entry (length = 4 dus 2 HEX)
+- Kijken naar Size of Single Partition Entry (length l_= 4 dus 2 HEX)
 
 ```
 - Size of Single Partition Entry = 80000000
@@ -56,9 +56,9 @@ Raw data GPT
 ```
 
 #### Number of blocks available for partitions
-
+### Credits to Bokoloco
 ```
-Last useable LBA - First Usable LBA
+(Last useable LBA - First Usable LBA) + 1
 ```
 
 #### Space in bytes usable for partitions?
@@ -105,7 +105,7 @@ Bytes per cluster * Sectors per FAT
 (20446-2048 + 1) * 512 = 9420288
 ```
 
-#### Size of root directory in bytes
+#### Size of root directory in bytes ( no clue of dit kan & klopt )
 - Aantal bytes (32 bytes) * 512
 
 ```
@@ -113,6 +113,7 @@ Bytes per cluster * Sectors per FAT
 ```
 
 #### Address of first FAT
+### Credits to Siebe aka Chepte 
 - "The first FAT directly follows the reserved region."
 ```
 er zijn 8 sectoren reserved
@@ -123,7 +124,9 @@ en dan uw startadres is 0x0100000
 ```
 
 #### Address of root directory
-First FAT adres + (aantal FATs * BytesPerFAT)
+First FAT adres + (aantal FATs * BytesPerFAT) => niet zeker van deze
+### Chepte's fix
+first fat address + (sectors per fat) * 512
 
 ```
 101000 + (2 * 36864) HEX = 113000
@@ -153,4 +156,18 @@ Start of region data + (laatste van cluster chain - 2) + cluster size
 108000 (HEX) + (3439 - 2) (DEC) * 2048
 ```
 &rarr; laatste 4 bytes nemen van file content
+#### Total Size of FAT16 Volume in bytes ( extra exercise 1 )
+small number of sectors * sector size 
+
+```
+28672 * 512
+```
+
+### Credits to chepte voor images
+
+![afbeelding](https://user-images.githubusercontent.com/71447000/120071478-edf45080-c08f-11eb-9095-cb61bf6f396b.png)
+
+
+![afbeelding](https://user-images.githubusercontent.com/71447000/120071562-4b889d00-c090-11eb-9251-b099c59d166f.png)
+
 

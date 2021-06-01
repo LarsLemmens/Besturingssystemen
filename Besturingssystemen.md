@@ -142,7 +142,7 @@ rootDirectoryAddress + rootDirectorySize;
 # Deze zijn van extra oefening 1 maar zelfde principe voor allemaal
 
 #### Cluster Chain (file4.dat)
-First FAT address + First cluster * 2
+First FAT address + First cluster * 2 &rarr; AFHANKELIJK AANTAL BITS
 
 ```
 100800 (HEX) + 6995 (36A6 IN HEX) * 2 =  0x0103EA6
@@ -156,6 +156,7 @@ Start of region data + (laatste van cluster chain - 2) + cluster size
 108000 (HEX) + (3439 - 2) (DEC) * 2048
 ```
 &rarr; laatste 4 bytes nemen van file content
+
 #### Total Size of FAT16 Volume in bytes ( extra exercise 1 )
 small number of sectors * sector size 
 

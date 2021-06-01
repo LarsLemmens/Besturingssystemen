@@ -161,7 +161,7 @@ First FAT address + First cluster * 2 &rarr; AFHANKELIJK AANTAL BITS
 &rarr; Op dat adres staat volgende getal in cluster chain (little endian omzetten)
 
 #### File contents (file4.dat)
-Start of region data + (laatste van cluster chain - 2) + cluster size
+Start of region data + (laatste van cluster chain - 2) * cluster size
 
 ##### Note: Start of Region Data = Data Region Address in Boot Sector
 

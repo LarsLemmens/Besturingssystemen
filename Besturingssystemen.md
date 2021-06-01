@@ -82,6 +82,9 @@ Raw data GPT
 (20446-2048 + 1) * 512 = 9420288
 ```
 
+# BIJ SECONDS / 2 => SECONDS * 2
+
+
 ## BOOT SECTOR
 
 #### Bytes occupied by reserved region

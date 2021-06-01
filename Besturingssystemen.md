@@ -112,6 +112,11 @@ Bytes per cluster * Sectors per FAT
 32 * 512 = 16384
 ```
 
+#### cluster size 
+```
+sector per cluster * bytes per sector
+```
+
 #### Address of first FAT
 ### Credits to Siebe aka Chepte 
 - "The first FAT directly follows the reserved region."

@@ -92,7 +92,7 @@ Bytes per cluster * sectors occupied by reserved region
 ```
 
 #### Bytes per FAT
-Bytes per cluster * Bytes per FAT
+Bytes per cluster * Sectors per FAT
 
 ```
 512 * 72 = 36864
@@ -135,4 +135,22 @@ rootDirectoryAddress + rootDirectorySize;
 ```
 113000 + 16384 = 117000
 ```
+
+# Deze zijn van extra oefening 1 maar zelfde principe voor allemaal
+
+#### Cluster Chain (file4.dat)
+First FAT address + First cluster * 2
+
+```
+100800 (HEX) + 6995 (36A6 IN HEX) * 2 =  0x0103EA6
+```
+&rarr; Op dat adres staat volgende getal in cluster chain (little endian omzetten)
+
+#### File contents (file4.dat)
+Start of region data + (laatste van cluster chain - 2) + cluster size
+
+```
+108000 (HEX) + (3439 - 2) (DEC) * 2048
+```
+&rarr; laatste 4 bytes nemen van file content
 

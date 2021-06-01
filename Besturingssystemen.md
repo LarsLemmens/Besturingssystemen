@@ -123,6 +123,9 @@ en dan uw startadres is 0x0100000
 0x0100000 + 0x1000 = 0x101000
 ```
 
+### Root Directory Size in Bytes
+Root Directory Size in Bytes = Number of Possible Root Entries * Directory entry size (usually 32 bytes)
+
 #### Address of root directory
 First FAT adres + (aantal FATs * BytesPerFAT) => niet zeker van deze
 ### Chepte's fix
